@@ -1,0 +1,52 @@
+.prismjs {
+  background: var(--code-bg);
+  color: var(--color-text);
+  tab-size: 2;
+
+  /* firefox custom scrollbar */
+  scrollbar-color: var(--code-primary) var(--code-bg);
+  scrollbar-width: thin;
+}
+
+.prismjs::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: var(--code-bg);
+}
+
+.prismjs::-webkit-scrollbar-button {
+  display: none;
+}
+
+.prismjs::-webkit-scrollbar-track {
+  background: var(--code-bg);
+}
+
+.prismjs::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  border: 2px solid var(--code-bg);
+}
+
+.token.attr-value {
+  color: var(--color-text);
+}
+
+.token.property,
+.token.keyword,
+.token.tag,
+.token.tag .punctuation {
+  color: var(--code-primary);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted,
+.token.punctuation,
+.token.punctuation.attr-equals,
+.token.attr-value .punctuation {
+  color: var(--code-secondary);
+}

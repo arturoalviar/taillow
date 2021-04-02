@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme='light'] {
+  --color-bg: theme(colors.white);
+  --color-text: theme(colors.gray.700);
+  --color-primary: theme(colors.blue.600);
+  --color-svg: theme(colors.gray.800);
+
+  --code-bg: theme(colors.gray.50);
+  --code-primary: theme(colors.blue.700);
+  --code-secondary: theme(colors.blue.500);
+}
+
+[data-theme='dark'] {
+  --color-bg: theme(colors.gray.900);
+  --color-text: theme(colors.gray.50);
+  --color-primary: theme(colors.cyan.400);
+  --color-svg: theme(colors.gray.700);
+
+  --code-bg: theme(colors.gray.800);
+  --code-primary: theme(colors.cyan.500);
+  --code-secondary: theme(colors.cyan.300);
+}
+
+[data-theme='blue'] {
+  --color-bg: theme(colors.blue.900);
+  --color-text: theme(colors.blue.50);
+  --color-primary: theme(colors.orange.400);
+  --color-svg: theme(colors.blue.600);
+
+  --code-bg: theme(colors.blue.800);
+  --code-primary: theme(colors.orange.500);
+  --code-secondary: theme(colors.orange.300);
+}
+
+[data-theme='indigo'] {
+  --color-bg: theme(colors.indigo.900);
+  --color-text: theme(colors.indigo.50);
+  --color-primary: theme(colors.lime.600);
+  --color-svg: theme(colors.indigo.600);
+
+  --code-bg: theme(colors.indigo.800);
+  --code-primary: theme(colors.indigo.300);
+  --code-secondary: theme(colors.lime.400);
+}
+
+[data-theme='rose'] {
+  --color-bg: theme(colors.rose.200);
+  --color-text: theme(colors.rose.900);
+  --color-primary: theme(colors.red.700);
+  --color-svg: theme(colors.rose.300);
+
+  --code-bg: theme(colors.rose.100);
+  --code-primary: theme(colors.red.700);
+  --code-secondary: theme(colors.rose.500);
+}
+
+[data-theme='emerald'] {
+  --color-bg: theme(colors.green.900);
+  --color-text: theme(colors.green.50);
+  --color-primary: theme(colors.yellow.300);
+  --color-svg: theme(colors.green.600);
+
+  --code-bg: theme(colors.green.800);
+  --code-primary: theme(colors.yellow.500);
+  --code-secondary: theme(colors.yellow.300);
+}
+
+[data-theme='violet'] {
+  --color-bg: theme(colors.violet.900);
+  --color-text: theme(colors.violet.50);
+  --color-primary: theme(colors.teal.600);
+  --color-svg: theme(colors.violet.600);
+
+  --code-bg: theme(colors.violet.800);
+  --code-primary: theme(colors.teal.500);
+  --code-secondary: theme(colors.violet.300);
+}
+
+[data-theme='teal'] {
+  --color-bg: theme(colors.teal.800);
+  --color-text: theme(colors.teal.50);
+  --color-primary: theme(colors.pink.300);
+  --color-svg: theme(colors.teal.600);
+
+  --code-bg: theme(colors.teal.700);
+  --code-primary: theme(colors.teal.300);
+  --code-secondary: theme(colors.pink.400);
+}
+
+body,
+html,
+#app,
+.app-wrapper {
+  height: 100%;
+  overflow-x: hidden;
+}
